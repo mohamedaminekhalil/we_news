@@ -2,7 +2,7 @@ import requests
 from datetime import date
 
 API_ENDPOINT = "https://newsapi.org/v2/top-headlines?"
-API_KEY = "1bbc9f6145d34205bc67b19c1ba0921f"
+API_KEY = "Your_API_KEY_here"
 
 header = {
     "X-Api-Key": API_KEY
