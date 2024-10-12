@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" onclick="location.href='{{ url_for('today') }}';">
+                <i class="bi bi-newspaper"></i>
+                <p>News</p>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" onclick="location.href='{{ url_for('read_later') }}';">
+                <i class="bi bi-book-fill"></i>
+                <p>Read Later</p>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" onclick="location.href='{{ url_for('saved') }}';">
+                <i class="bi bi-bookmark-fill"></i>
+                <p>Saved</p>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" onclick="location.href='{{ url_for('archive') }}';">
+                <i class="bi bi-archive-fill"></i>
+                <p>Archive</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
