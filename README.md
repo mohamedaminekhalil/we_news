@@ -8,7 +8,7 @@ Users can filter news by category, save articles to favorites, and access archiv
 - Add articles to favorites or mark them for reading later.
 - Archive feature that saves articles by the day.
 - SQLite3 for local data storage.
-- 
+
 ## Requirements
 - Python 3.x
 - Flask
@@ -24,7 +24,8 @@ The application fetches news articles from [News API](https://newsapi.org/). You
 1. Clone the repository.
 2. Install the required packages: 
 ```bash
-pip install -r requirements.txt
+pip install request
+pip install flask
 python main.py
 Open your browser and navigate to http://127.0.0.1:2000
 You can also use other devices that connects to same network open your browser and navigate to http://192.168.10.180:2000
@@ -42,6 +43,9 @@ You can also use other devices that connects to same network open your browser a
 ## Database Setup
 The application uses SQLite3 for storing user preferences and archived articles. The database will be automatically created upon the first run.
 Using one table to store data about article with 2 extra columns for saved and later takes boolean as a value 0 or 1
+
+## Jinja
+Usage of jinja templates to make data in html file dynamic changes with data coming from database with flask rendering templates
 
 ## Acknowledgments
 - News articles sourced from [News API](https://newsapi.org/).
